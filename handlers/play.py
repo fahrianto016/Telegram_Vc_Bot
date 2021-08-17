@@ -183,11 +183,11 @@ def r_ply(type_):
                 
             ],
             [
-                InlineKeyboardButton('Playlist 📖', 'playlist'),
+                InlineKeyboardButton('Pʟᴀʏʟɪsᴛ 📖', 'playlist'),
                 
             ],
             [       
-                InlineKeyboardButton("❌ Close",'cls')
+                InlineKeyboardButton("❌ Cʟᴏsᴇ",'cls')
             ]        
         ]
     )
@@ -356,11 +356,11 @@ async def m_cb(b, cb):
                 
                 ],
                 [
-                    InlineKeyboardButton('Playlist 📖', 'playlist'),
+                    InlineKeyboardButton('Pʟᴀʏʟɪsᴛ 📖', 'playlist'),
                 
                 ],
                 [       
-                    InlineKeyboardButton("❌ Close",'cls')
+                    InlineKeyboardButton("❌ Cʟᴏsᴇ",'cls')
                 ]        
             ]
         )
@@ -438,7 +438,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @MusicXHelper to your Group and try again</b>",
+                                  "\n\nOr manually add @Xd_Lif to your Group and try again</b>",
                               )
                               pass
     try:
@@ -446,7 +446,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f"<i> {user.first_name} Usᴇʀʙᴏᴛ Nᴏᴛ Iɴ Tʜɪs Cʜᴀᴛ, Asᴋ Aᴅᴍɪɴ Tᴏ Sᴇɴᴅ /play Cᴏᴍᴍᴀɴᴅ Fᴏʀ Fɪʀsᴛ Tɪᴍᴇ Oʀ Aᴅᴅ {user.first_name} manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -462,7 +462,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("**__Processing Your Song__**")
+    await lel.edit("**__Pʀᴏᴄᴄᴇssɪɴɢ Yᴏᴜʀ Sᴏɴɢ__**")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -478,7 +478,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Song not found.Try another song or maybe spell it properly.")
+        await lel.edit("Sᴏɴɢ Nᴏᴛ Fᴏᴜɴᴅ.Tʀʏ Aɴᴏᴛʜᴇʀ Sᴏɴɢ Oʀ Mᴀʏʙᴇ Sᴘᴇʟʟ Iᴛ Pʀᴏᴘᴇʀʟʏ.")
         print(str(e))
         return
 
@@ -486,13 +486,13 @@ async def play(_, message: Message):
             [   
                 [
                                
-                    InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
-                    InlineKeyboardButton('Menu ⏯ ', callback_data='menu')
+                    InlineKeyboardButton('📖 Pʟᴀʏʟɪsᴛ', callback_data='playlist'),
+                    InlineKeyboardButton('Mᴇɴᴜ ⏯ ', callback_data='menu')
                 
                 ],                     
                 [
-                    InlineKeyboardButton('YouTube 🎬', url=f'{url}'),
-                    InlineKeyboardButton('Close 🗑', callback_data='cls')
+                    InlineKeyboardButton('YᴏᴜTᴜʙᴇ 🎬', url=f'{url}'),
+                    InlineKeyboardButton('Cʟᴏsᴇ 🗑', callback_data='cls')
                 
                 ]                             
             ]
@@ -511,7 +511,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}!",
+        caption=f"#⃣ Yᴏᴜʀ Rᴇǫᴜᴇsᴛᴇᴅ Sᴏɴɢ **queued** Aᴛ position {position}!",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        caption="▶️ **Pʟᴀʏɪɴɢ** Hᴇʀᴇ Tʜᴀ Sᴏɴɢ Rᴇqᴜᴇsᴛᴇᴅ Bʏ {}".format(
         message.from_user.mention()
         ),
     )
