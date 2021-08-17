@@ -7,15 +7,15 @@ from config import BOT_USERNAME
 @Client.on_message(filters.command(["start", "start@DARKXV2BOT"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**ʜᴇʟʟᴏ 👋🏻 {}!**\n\n *I'ᴍ 𓆩ᴅᴀʀᴋᴍᴜsɪᴄ𓆪..ᴀɴ ᴀᴍᴀᴢɪɴɢ ɢʀᴏᴜᴘ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs..[😉]!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
+        text="**ʜᴇʟʟᴏ 👋🏻 {}!**\n\n *I'ᴍ 𓆩ᴄᴏʙʀᴀᴍᴜsɪᴄ𓆪..ᴀɴ ᴀᴍᴀᴢɪɴɢ ɢʀᴏᴜᴘ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs..[😉]!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("❀ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ❀", url="https://t.me/DARKXV2BOT?startgroup=true")
+            InlineKeyboardButton("★ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ★", url="https://t.me/DARKXV2BOT?startgroup=true")
             ],[
-            InlineKeyboardButton("❀ɢʀᴏᴜᴘ❀", url="https://t.me/DARKV2SUPPORT"),
-            InlineKeyboardButton("❀ᴄʜᴀɴɴᴇʟ❀", url="https://t.me/dark5_spammer")
+            InlineKeyboardButton("★ɢʀᴏᴜᴘ★", url="https://t.me/LOVExWORD"),
+            InlineKeyboardButton("★ᴄʜᴀɴɴᴇʟ★", url="https://t.me/LXW_UPDATE")
             ],[
-            InlineKeyboardButton("❀ᴄʀᴇᴀᴛᴇʀ❀", url="http://t.me/DARKAMAN")
+            InlineKeyboardButton("★ʟᴇɢᴇɴᴅ★", url="http://t.me/Xd_Lif")
             ]]
         ),
         disable_web_page_preview=True
@@ -24,10 +24,10 @@ async def start(_, message: Message):
 @Client.on_message(filters.command(["start", "start@DARKXV2BOT"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        text="**❀ᴅᴀʀᴋᴍᴜsɪᴄʙᴏᴛ ɪs ᴏɴʟɪɴᴇ❀**",
+        text="**♥︎ᴄᴏʙʀᴀᴍᴜsɪᴄʙᴏᴛ ɪs ᴏɴʟɪɴᴇ♥︎**",
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton(text="❀sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ❀", url="https://t.me/DARKV2SUPPORT")
+            InlineKeyboardButton(text="♥︎sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ♥︎", url="https://t.me/LOVExWORD")
             ]]
         )
     )
@@ -36,12 +36,12 @@ async def gstart(_, message: Message):
 @Client.on_message(filters.command(["cmdlist", "start@DARKXV2BOT"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
-        text="""**𓆩ᴅᴀʀᴋᴍᴜsɪᴄʙᴏᴛ𓆪 :ʜᴇʟᴘ ᴍᴇɴᴜ**
+        text="""**𓆩ᴄᴏʙʀᴀᴍᴜsɪᴄʙᴏᴛ𓆪 :ʜᴇʟᴘ ᴍᴇɴᴜ**
 
-__×𓆩ᴀ𓆪 ❀ғɪʀSᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ..
-__×𓆩ᴀ𓆪 ❀ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀʟʟ ᴘᴇʀᴍɪSSɪᴏɴ❀ ..__
+__×𓆩ʀ𓆪 ♥︎Fɪʀsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ..
+__×𓆩ʀ𓆪 ♥︎ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀʟʟ ᴘᴇʀᴍɪSSɪᴏɴ♥︎ ..__
 
-**𓆩ᴀ𓆪 ❀ᴄᴏᴍᴍᴏɴ ᴄᴏᴍᴍᴀɴᴅs❀.**
+**𓆩ʀ𓆪 ♥︎ᴄᴏᴍᴍᴏɴ ᴄᴏᴍᴍᴀɴᴅs♥︎.**
 
 • `/ᴘʟᴀʏ` - Sᴏɴɢ ɴᴀᴍᴇ : __ᴘʟᴀʏ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ__
 • `/ᴅᴘʟᴀʏ` - Sσηg ɴᴀᴍᴇ : __ᴘʟᴀʏ ᴠɪᴀ ᴅᴇᴇᴢᴇʀ__
@@ -55,7 +55,7 @@ __×𓆩ᴀ𓆪 ❀ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜ 
 • `/saavn` - song name : __ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ʏᴏᴜ ᴡᴀɴᴛ ғʀᴏᴍ sᴀᴀᴠɴ__
 • `/search` - YouTube Title : __(ɢᴇᴛ ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ ǫᴜᴇʀʏ)__
 
-**𓆩ᴀ𓆪 ❀ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ᴄᴏᴍᴍᴀɴᴅ❀.**
+**𓆩ʀ𓆪 ♥︎ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ᴄᴏᴍᴍᴀɴᴅ♥︎.**
 
 • `/Sᴋɪᴘ : Sᴋɪᴘs ᴍᴜsɪᴄ
 • `/ᴘᴀᴜSᴇ : ᴘᴀᴜSᴇ ᴘʟᴀʏɪɴɢ ᴍᴜSɪᴄ
@@ -66,7 +66,7 @@ __×𓆩ᴀ𓆪 ❀ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜ 
 • `/ᴜSᴇʀʙᴏᴛʟᴇᴀᴠᴇ : ᴀSSɪsᴛᴀɴᴛ ʟᴇᴀᴠᴇS ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.__""",
         reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="𓆩ɖǟʀӄӼ ʍʊֆɨƈ ɮօȶ𓆪", url="https://t.me/DARKV2SUPPORT")
+              InlineKeyboardButton(text="𓆩∆I$H𓆪", url="https://t.me/aish_jaan_0")
               ]]
           )
       )
