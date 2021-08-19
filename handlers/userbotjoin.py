@@ -15,7 +15,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Add me as admin of yor group first</b>",
+            "<b>ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴏғ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғɪʀsᴛ</b>",
         )
         return
 
@@ -26,7 +26,7 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id,"I joined here as you requested")
+        await USER.send_message(message.chat.id,"ᴄᴏʙʀᴀ ᴍᴜsɪᴄ ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ғᴏʀ ᴘʟᴀʏɪɴɢ ɴᴏɴsᴛᴏᴘ ɴᴏ ʟᴀɢ ᴍᴜsɪᴄ")
     except UserAlreadyParticipant:
         await message.reply_text(
             "<b>helper already in your chat</b>",
