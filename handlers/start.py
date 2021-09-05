@@ -7,15 +7,15 @@ from config import BOT_USERNAME
 @Client.on_message(filters.command(["start", "start@DARKXV2BOT"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**ʜᴇʟʟᴏ 👋🏻 {}!**\n\n *I'ᴍ 𓆩ᴄᴏʙʀᴀᴍᴜsɪᴄ𓆪..ᴀɴ ᴀᴍᴀᴢɪɴɢ ɢʀᴏᴜᴘ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs..[😉]!**\n\n**ᴄʟɪᴄᴋ /cmdlist ғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ᴏɴ ᴍʏ ᴜsᴀɢᴇ ❤**".format(message.from_user.mention),
+        text="**HALOO TELASOO👋🏻 {}!**\n\n *SAYA ARSUL BOT YG SUNGGUH AMAZING YG BISA MEMUTAR LAGU DI GC KALIAN[😉]!**\n\n**KLIK /cmdlist UNTUK BANTUAN PERINTAH❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("★ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ★", url="https://t.me/DARKXV2BOT?startgroup=true")
+            InlineKeyboardButton("★тαмвαнкαη gυα кє g¢ ℓυ★", url="https://t.me/DARKXV2BOT?startgroup=true")
             ],[
-            InlineKeyboardButton("★ɢʀᴏᴜᴘ★", url="https://t.me/LOVExWORD"),
-            InlineKeyboardButton("★ᴄʜᴀɴɴᴇʟ★", url="https://t.me/LXW_UPDATE")
+            InlineKeyboardButton("★𝙶𝚁𝚄𝙿𝙺𝚄★", url="https://t.me/areasulawesi"),
+            InlineKeyboardButton("★𝙲𝙷𝙰𝙽𝙽𝙴𝙻★", url="https://t.me/Rakyatsulawesi")
             ],[
-            InlineKeyboardButton("★ʟᴇɢᴇɴᴅ★", url="http://t.me/Xd_Lif")
+            InlineKeyboardButton("★𝙾𝚆𝙽𝙴𝚁 𝙸𝙽𝙸 𝙱𝙾𝚃★", url="http://t.me/tummingrockers")
             ]]
         ),
         disable_web_page_preview=True
@@ -27,7 +27,7 @@ async def gstart(_, message: Message):
         text="**♥︎ᴄᴏʙʀᴀᴍᴜsɪᴄʙᴏᴛ ɪs ᴏɴʟɪɴᴇ♥︎**",
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton(text="♥︎sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ♥︎", url="https://t.me/LOVExWORD")
+            InlineKeyboardButton(text="♥︎sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ♥︎", url="https://t.me/areasulawesi")
             ]]
         )
     )
