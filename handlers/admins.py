@@ -23,7 +23,7 @@ async def update_admin(client, message):
     for u in admins:
         new_ads.append(u.user.id)
     a[message.chat.id] = new_ads
-    await message.reply_text('Sucessfully updated admin list in **{}**'.format(message.chat.title))
+    await message.reply_text('Sukses mengupdate admin di gc **{}** lu'.format(message.chat.title))
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -35,7 +35,7 @@ async def pause(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'paused'
     ):
-        await message.reply_text("❗ Nothing is playing!")
+        await message.reply_text("❗ Tidak ada musik yg terputar goblok!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text("▶️ Paused!")
@@ -50,7 +50,7 @@ async def resume(_, message: Message):
     ) or (
             callsmusic.pytgcalls.active_calls[message.chat.id] == 'playing'
     ):
-        await message.reply_text("❗ Nothing is paused!")
+        await message.reply_text("❗ TOLOL lu!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text("⏸ Resumed!")
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Nothing is streaming!")
+        await message.reply_text("❗ Admin goblog!")
     else:
         try:
             queues.clear(message.chat.id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ Akhirnya berenti jg, capek gua!")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -78,7 +78,7 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     global que
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Nothing is playing to skip!")
+        await message.reply_text("❗Skip mulu,makanya cari lagu yg bener tolol!")
     else:
         queues.task_done(message.chat.id)
 
