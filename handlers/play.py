@@ -108,13 +108,13 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("etc/font.otf", 32)
-    draw.text((205, 550), f"Title: {title}", (51, 215, 255), font=font)
+    draw.text((205, 550), f"Judul: {title}", (255, 215, 255), font=font)
     draw.text(
-        (205, 590), f"Duration: {duration}", (255, 255, 255), font=font
+        (205, 590), f"Durasi: {duration}", (255, 255, 255), font=font
     )
-    draw.text((205, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((205, 630), f"Penonton: {views}", (255, 255, 255), font=font)
     draw.text((205, 670),
-        f"Added By: {requested_by}",
+        f"Dari Jamet: {requested_by}",
         (255, 255, 255),
         font=font,
     )
@@ -138,9 +138,9 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style='md')
-    msg = "**Now Playing** in {}".format(message.chat.title)
+    msg = "**Terputar Sekarang** in {}".format(message.chat.title)
     msg += "\n"+ now_playing
-    msg += "\n- Req by "+by
+    msg += "\n- Req by jamet "+by
     temp.pop(0)
     if temp:
         msg += '\n\n'
@@ -161,9 +161,9 @@ def updated_stats(chat, queue, vol=100):
         if len(que) > 0:
             stats += '\n\n'
             stats += 'Volume : {}%\n'.format(vol)
-            stats += 'Songs in queue : `{}`\n'.format(len(que))
-            stats += 'Now Playing : **{}**\n'.format(queue[0][0])
-            stats += 'Requested by : {}'.format(queue[0][1].mention)
+            stats += 'Dalam antrian ke : `{}`\n'.format(len(que))
+            stats += 'Terputar sekarang : **{}**\n'.format(queue[0][0])
+            stats += 'Requestednya jamet : {}'.format(queue[0][1].mention)
     else:
         stats = None
     return stats
