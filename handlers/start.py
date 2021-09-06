@@ -7,7 +7,7 @@ from config import BOT_USERNAME
 @Client.on_message(filters.command(["start", "start@DARKXV2BOT"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**HALOO TELASOO👋🏻 {}!**\n\n *SAYA ARSUL BOT YG SUNGGUH AMAZING YG BISA MEMUTAR LAGU DI GC KALIAN[😉]!**\n\n**KLIK /cmdlist UNTUK BANTUAN PERINTAH❤**".format(message.from_user.mention),
+        text="**Haloo {} TELASOO👋🏻**\n\n **SAYA ARSUL BOT YG SUNGGUH AMAZING YG BISA MEMUTAR LAGU DI GC Kalian 💪💪!**\n\n **KLIK /cmdlist UNTUK BANTUAN PERINTAH❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
             InlineKeyboardButton("★тαмвαнкαη gυα кє g¢ ℓυ★", url="https://t.me/DARKXV2BOT?startgroup=true")
@@ -36,12 +36,12 @@ async def gstart(_, message: Message):
 @Client.on_message(filters.command(["cmdlist", "start@DARKXV2BOT"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
-        text="""**𓆩ᴄᴏʙʀᴀᴍᴜsɪᴄʙᴏᴛ𓆪 :ʜᴇʟᴘ ᴍᴇɴᴜ**
+        text="""**𓆩𝐀𝐑𝐒𝐔𝐋𝐁𝐎𝐓𓆪 :𝐌𝐄𝐍𝐔 𝐁𝐀𝐍𝐓𝐔𝐀𝐍**
 
-__×𓆩ʀ𓆪 ♥︎Fɪʀsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ..
-__×𓆩ʀ𓆪 ♥︎ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴀʟʟ ᴘᴇʀᴍɪSSɪᴏɴ♥︎ ..__
+__×𓆩ʀ𓆪 ♥︎Pertama-taman, tambahkan gua ke gc lu
+__×𓆩ʀ𓆪 ♥︎Kedua, lu jadiin admin terus centang semua permissionnya, okeyy..__
 
-**𓆩ʀ𓆪 ♥︎ᴄᴏᴍᴍᴏɴ ᴄᴏᴍᴍᴀɴᴅs♥︎.**
+**𓆩ʀ𓆪 ♥︎𝐏𝐄𝐑𝐈𝐍𝐓𝐀𝐇 𝐘𝐆 𝐃𝐈𝐀𝐊𝐒𝐄𝐒 𝐒𝐄𝐌𝐔𝐀 𝐌𝐄𝐌𝐁𝐄𝐑**
 
 • `/ᴘʟᴀʏ` - Sᴏɴɢ ɴᴀᴍᴇ : __ᴘʟᴀʏ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ__
 • `/ᴅᴘʟᴀʏ` - Sσηg ɴᴀᴍᴇ : __ᴘʟᴀʏ ᴠɪᴀ ᴅᴇᴇᴢᴇʀ__
@@ -55,7 +55,7 @@ __×𓆩ʀ𓆪 ♥︎ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏ�
 • `/saavn` - song name : __ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ʏᴏᴜ ᴡᴀɴᴛ ғʀᴏᴍ sᴀᴀᴠɴ__
 • `/search` - YouTube Title : __(ɢᴇᴛ ʏᴏᴜᴛᴜʙᴇ sᴇᴀʀᴄʜ ǫᴜᴇʀʏ)__
 
-**𓆩ʀ𓆪 ♥︎ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs ᴄᴏᴍᴍᴀɴᴅ♥︎.**
+**𓆩ʀ𓆪 ♥𝐏𝐄𝐑𝐈𝐍𝐓𝐀𝐇 𝐊𝐇𝐔𝐒𝐔𝐒 𝐀𝐃𝐌𝐈𝐍.**
 
 • `/Sᴋɪᴘ : Sᴋɪᴘs ᴍᴜsɪᴄ
 • `/ᴘᴀᴜSᴇ : ᴘᴀᴜSᴇ ᴘʟᴀʏɪɴɢ ᴍᴜSɪᴄ
@@ -66,7 +66,7 @@ __×𓆩ʀ𓆪 ♥︎ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀS ᴀᴅᴍɪɴ ɪɴ ʏᴏ�
 • `/ᴜSᴇʀʙᴏᴛʟᴇᴀᴠᴇ : ᴀSSɪsᴛᴀɴᴛ ʟᴇᴀᴠᴇS ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ.__""",
         reply_markup=InlineKeyboardMarkup(
               [[
-              InlineKeyboardButton(text="𓆩∆I$H𓆪", url="https://t.me/aish_jaan_0")
+              InlineKeyboardButton(text="🙏DONASI SOB🙏", url="https://t.me/tummingrockers")
               ]]
           )
       )
